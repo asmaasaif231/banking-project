@@ -1,13 +1,8 @@
-/*
 
-App Starter Template
-
-http://www.templatemo.com/tm-492-app-starter
-
-*/
 
 body {
-		background: #1c1c1c;
+		/* background: #1c1c1c; */
+    background: #385E72;
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
 		font-weight: 300;
@@ -46,7 +41,7 @@ h2 {
 }
 
 h3 {
-  color: #535bd4;
+  color: #54bfe9;
   font-size: 22px;
   line-height: 32px;
   padding-bottom: 4px;
@@ -100,16 +95,20 @@ html{
 }
 
 a {
-  color: #535bd4;
+  color: #1dc9e3;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
+  
+  
 }
 a:hover, a:active, a:focus {
   color: #3FF;
   outline: none;
 }
+
+
 
 * {
   -webkit-box-sizing: border-box;
@@ -213,7 +212,7 @@ a:hover, a:active, a:focus {
 }
 
 .navbar-default .navbar-brand {
-  color: #535bd4;
+  color: #1dc9e3;
   font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
@@ -275,7 +274,8 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #home {
-    background: #535bd4 url('../images/home-bg.jpg') no-repeat;
+     background: #1dc9e3 url('../images/home-bg.jpg') no-repeat; 
+   
     background-size: cover;
     background-position: center center;
     color: #ffffff;
@@ -292,9 +292,9 @@ a:hover, a:active, a:focus {
 }
 
 #home .overlay {
-  background: #4776E6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #4776E6 , #8E54E9); /* Chrome 10-25, Safari 5.1-6 */ 
-  background: linear-gradient(to left, #4776E6 , #8E54E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #dbe647d3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left,#dbe647 , #54bfe9); /* Chrome 10-25, Safari 5.1-6 */ 
+  background: linear-gradient(to left,#cee647 , #54bfe9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   opacity: 0.9;
   position: absolute;
   width: 100%;
@@ -338,7 +338,7 @@ a:hover, a:active, a:focus {
 }
 
 #divider p {
-  color: #666;
+  color: #666666e5;
   font-size: 26px;
   line-height: 42px;
 }
@@ -417,7 +417,6 @@ a:hover, a:active, a:focus {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
   /* ideally, transition speed should match zoom duration */
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -443,32 +442,33 @@ a:hover, a:active, a:focus {
    Pricing section         
 -----------------------------------------*/
 
-#pricing {
-  background: #535bd4;
+#skills {
+  background: #54bfe9;
+  text-align: center;
 }
 
-#pricing .pricing-plan {
+#skills .pricing-plan {
   background-color: #ffffff;
   border-radius: 2px;
   margin-bottom: 32px;
 }
 
-#pricing .pricing-plan .pricing-month {
+#skills .pricing-plan .pricing-month {
   padding: 14px 10px 6px 10px;
 }
 
-#pricing .pricing-plan .pricing-month h2 {
+#skills .pricing-plan .pricing-month h2 {
   font-size: 52px;
   color: #1dc9e3;
 }
 
-#pricing .pricing-plan .section-btn {
+#skills .pricing-plan .section-btn {
   background: #1dc9e3;
   position: relative;
   top: 20px;
 }
 
-#pricing .pricing-plan .section-btn:hover {
+#skills .pricing-plan .section-btn:hover {
   background-color: #ffffff;
   color: #222;
 }
@@ -888,3 +888,4 @@ footer p {
   }
 
 }
+
