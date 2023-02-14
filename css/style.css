@@ -6,7 +6,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
 		font-weight: 300;
-    padding-top: 70px;
+    padding-top: 20px;
     overflow-x: hidden;
 }
 
@@ -28,7 +28,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-    color: #ffffff;
+    color: #5c5b5b;
     font-size: 52px;
     letter-spacing: 2px;
     padding-bottom: 10px;
@@ -36,7 +36,7 @@ h1 {
 }
 
 h2 {
-  color: #f0f0f0;
+  color: #7e7878;
   font-size: 32px;
 }
 
@@ -139,65 +139,17 @@ a:hover, a:active, a:focus {
   text-align: center;
 }
 
-#about,
-#screenshot,
-#divider,
-#pricing,
-#newsletter {
-  padding-top: 100px;
-  padding-bottom: 100px;
+body,
+#skills,
+footer,section{
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #divider,
 #pricing {
   text-align: center;
 }
-
-
-/*---------------------------------------
-    Preloader section              
------------------------------------------*/
-
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99999;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  background: none repeat scroll 0 0 #ffffff;
-}
-
-.sk-spinner-pulse {
-  width: 60px;
-  height: 60px;
-  background-color: #1dc9e3;
-  border-radius: 100%;
-  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
-          animation: sk-pulseScaleOut 1s infinite ease-in-out; }
-
-@-webkit-keyframes sk-pulseScaleOut {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0); }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 0; } }
-
-@keyframes sk-pulseScaleOut {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0); }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 0; } }
-
 
 
 /*---------------------------------------
@@ -274,7 +226,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #home {
-     background: #1dc9e3 url('../images/home-bg.jpg') no-repeat; 
+     /* background: #1dc9e3 url('../images/home-img.png') no-repeat;  */
    
     background-size: cover;
     background-position: center center;
@@ -302,6 +254,8 @@ a:hover, a:active, a:focus {
   top: 0;
   left: 0;
   right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #home img {
@@ -314,8 +268,8 @@ a:hover, a:active, a:focus {
   padding-left: 32px;
 }
 
-#home p,
-#newsletter p {
+#home p
+ {
   color: #f0f0f0;
   letter-spacing: 1px;
 }
@@ -443,22 +397,23 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #skills {
-  background: #54bfe9;
+  background: #ffffff;
   text-align: center;
 }
 
 #skills .pricing-plan {
-  background-color: #ffffff;
+  background-color: #d4edf8;;
   border-radius: 2px;
   margin-bottom: 32px;
+  padding: 10px;
 }
 
 #skills .pricing-plan .pricing-month {
-  padding: 14px 10px 6px 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 #skills .pricing-plan .pricing-month h2 {
-  font-size: 52px;
+  font-size: 44px;
   color: #1dc9e3;
 }
 
@@ -469,81 +424,12 @@ a:hover, a:active, a:focus {
 }
 
 #skills .pricing-plan .section-btn:hover {
-  background-color: #ffffff;
+  background-color: #ddd4d4;
   color: #222;
 }
 
 
-/*---------------------------------------
-    Newsletter section              
------------------------------------------*/
 
-#newsletter {
-    background: #535bd4 url('../images/newsletter-bg.jpg') no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: #ffffff;
-    position: relative;
-}
-
-#newsletter .overlay {
-  background: #1dc9e3;
-  opacity: 0.9;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#newsletter .form-control {
-  background-color: transparent;
-  border: none;
-  border-bottom: 3px solid #eee;
-  border-radius: 0px;
-  box-shadow: none;
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 400;
-  height: 50px;
-  transition: all 0.4s ease-in-out;
-  margin-bottom: 20px;
-}
-
-#newsletter .form-control:focus {
-  border-color: #ffffff;
-}
-
-#newsletter input[type="submit"] {
-  background-color: #ffffff;
-  border-radius: 100px;
-  border: 3px solid #ffffff;
-  color: #1dc9e3;
-  font-size: 17px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  height: 55px;
-}
-
-#newsletter input[type="submit"]:hover {
-  background-color: transparent;
-  color: #ffffff;
-}
-
-#newsletter .form-control::-moz-placeholder {
-  color: #ffffff;
-  opacity: 1;
-}
-
-#newsletter .form-control:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-#newsletter .form-control::-webkit-input-placeholder {
-  color: #ffffff;
-}
 
 
 /*---------------------------------------
@@ -551,8 +437,8 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 footer span {
@@ -820,9 +706,7 @@ footer p {
     padding-bottom: 32px;
   }
 
-  #about, #divider,
-  #screenshot,
-  #pricing, #newsletter {
+  #container {
     padding-top: 60px;
     padding-bottom: 60px;
   }
