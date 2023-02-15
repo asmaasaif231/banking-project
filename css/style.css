@@ -21,6 +21,9 @@ h1,h2,h3,h4,h5,h6,
   font-weight: 400;
 }
 
+.error{
+  color: red;
+}
 
 h1,h2,h3,h4,h5,h6 {
   font-weight: 400;
@@ -95,17 +98,19 @@ html{
 }
 
 a {
-  color: #1dc9e3;
+  color: #12a6bd;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
+  font-size: larger;
   
   
 }
 a:hover, a:active, a:focus {
-  color: #3FF;
+  color: rgb(17, 98, 219);
   outline: none;
+  font-size: xx-large;
 }
 
 
@@ -270,11 +275,11 @@ footer,section{
 
 #home p
  {
-  color: #f0f0f0;
+  color: #7c7272;
   letter-spacing: 1px;
 }
 
-#home .section-btn {
+#skills .section-btn {
   background: #1dc9e3;
 }
 
@@ -424,7 +429,7 @@ footer,section{
 }
 
 #skills .pricing-plan .section-btn:hover {
-  background-color: #ddd4d4;
+  background-color: #1dc9e3;
   color: #222;
 }
 
