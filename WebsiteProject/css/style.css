@@ -6,7 +6,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
 		font-weight: 300;
-    padding-top: 70px;
+    padding-top: 20px;
     overflow-x: hidden;
 }
 
@@ -21,6 +21,9 @@ h1,h2,h3,h4,h5,h6,
   font-weight: 400;
 }
 
+.error{
+  color: red;
+}
 
 h1,h2,h3,h4,h5,h6 {
   font-weight: 400;
@@ -28,7 +31,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-    color: #ffffff;
+    color: #5c5b5b;
     font-size: 52px;
     letter-spacing: 2px;
     padding-bottom: 10px;
@@ -36,7 +39,7 @@ h1 {
 }
 
 h2 {
-  color: #f0f0f0;
+  color: #7e7878;
   font-size: 32px;
 }
 
@@ -95,17 +98,19 @@ html{
 }
 
 a {
-  color: #1dc9e3;
+  color: #12a6bd;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
+  font-size: larger;
   
   
 }
 a:hover, a:active, a:focus {
-  color: #3FF;
+  color: rgb(17, 98, 219);
   outline: none;
+  font-size: xx-large;
 }
 
 
@@ -139,65 +144,17 @@ a:hover, a:active, a:focus {
   text-align: center;
 }
 
-#about,
-#screenshot,
-#divider,
-#pricing,
-#newsletter {
-  padding-top: 100px;
-  padding-bottom: 100px;
+body,
+#skills,
+footer,section{
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #divider,
 #pricing {
   text-align: center;
 }
-
-
-/*---------------------------------------
-    Preloader section              
------------------------------------------*/
-
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99999;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  background: none repeat scroll 0 0 #ffffff;
-}
-
-.sk-spinner-pulse {
-  width: 60px;
-  height: 60px;
-  background-color: #1dc9e3;
-  border-radius: 100%;
-  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
-          animation: sk-pulseScaleOut 1s infinite ease-in-out; }
-
-@-webkit-keyframes sk-pulseScaleOut {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0); }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 0; } }
-
-@keyframes sk-pulseScaleOut {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0); }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 0; } }
-
 
 
 /*---------------------------------------
@@ -274,7 +231,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #home {
-     background: #1dc9e3 url('../images/home-bg.jpg') no-repeat; 
+     /* background: #1dc9e3 url('../images/home-img.png') no-repeat;  */
    
     background-size: cover;
     background-position: center center;
@@ -302,6 +259,8 @@ a:hover, a:active, a:focus {
   top: 0;
   left: 0;
   right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #home img {
@@ -314,13 +273,13 @@ a:hover, a:active, a:focus {
   padding-left: 32px;
 }
 
-#home p,
-#newsletter p {
-  color: #f0f0f0;
+#home p
+ {
+  color: #7c7272;
   letter-spacing: 1px;
 }
 
-#home .section-btn {
+#skills .section-btn {
   background: #1dc9e3;
 }
 
@@ -443,22 +402,23 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #skills {
-  background: #54bfe9;
+  background: #ffffff;
   text-align: center;
 }
 
 #skills .pricing-plan {
-  background-color: #ffffff;
+  background-color: #d4edf8;;
   border-radius: 2px;
   margin-bottom: 32px;
+  padding: 10px;
 }
 
 #skills .pricing-plan .pricing-month {
-  padding: 14px 10px 6px 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 #skills .pricing-plan .pricing-month h2 {
-  font-size: 52px;
+  font-size: 44px;
   color: #1dc9e3;
 }
 
@@ -469,81 +429,12 @@ a:hover, a:active, a:focus {
 }
 
 #skills .pricing-plan .section-btn:hover {
-  background-color: #ffffff;
+  background-color: #1dc9e3;
   color: #222;
 }
 
 
-/*---------------------------------------
-    Newsletter section              
------------------------------------------*/
 
-#newsletter {
-    background: #535bd4 url('../images/newsletter-bg.jpg') no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: #ffffff;
-    position: relative;
-}
-
-#newsletter .overlay {
-  background: #1dc9e3;
-  opacity: 0.9;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#newsletter .form-control {
-  background-color: transparent;
-  border: none;
-  border-bottom: 3px solid #eee;
-  border-radius: 0px;
-  box-shadow: none;
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 400;
-  height: 50px;
-  transition: all 0.4s ease-in-out;
-  margin-bottom: 20px;
-}
-
-#newsletter .form-control:focus {
-  border-color: #ffffff;
-}
-
-#newsletter input[type="submit"] {
-  background-color: #ffffff;
-  border-radius: 100px;
-  border: 3px solid #ffffff;
-  color: #1dc9e3;
-  font-size: 17px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  height: 55px;
-}
-
-#newsletter input[type="submit"]:hover {
-  background-color: transparent;
-  color: #ffffff;
-}
-
-#newsletter .form-control::-moz-placeholder {
-  color: #ffffff;
-  opacity: 1;
-}
-
-#newsletter .form-control:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-#newsletter .form-control::-webkit-input-placeholder {
-  color: #ffffff;
-}
 
 
 /*---------------------------------------
@@ -551,8 +442,8 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 footer span {
@@ -820,9 +711,7 @@ footer p {
     padding-bottom: 32px;
   }
 
-  #about, #divider,
-  #screenshot,
-  #pricing, #newsletter {
+  #container {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -888,4 +777,142 @@ footer p {
   }
 
 }
+
+/*  -----------------------------------theme ----------------------------------- */
+
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	border: 2px solid #999;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	border: 2px solid #999;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
 
